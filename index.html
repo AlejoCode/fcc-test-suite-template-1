@@ -5,78 +5,105 @@
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css" />
     <style>
-          /* For mobile phones: */
-      [class*="col-"] {
+      /* For mobile phones: */
+      [class*='col-'] {
+        width: 100%;
+      }
+
+      @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {
+          width: 8.33%;
+        }
+        .col-2 {
+          width: 16.66%;
+        }
+        .col-3 {
+          width: 25%;
+        }
+        .col-4 {
+          width: 33.33%;
+        }
+        .col-5 {
+          width: 41.66%;
+        }
+        .col-6 {
+          width: 50%;
+        }
+        .col-7 {
+          width: 58.33%;
+        }
+        .col-8 {
+          width: 66.66%;
+        }
+        .col-9 {
+          width: 75%;
+        }
+        .col-10 {
+          width: 83.33%;
+        }
+        .col-11 {
+          width: 91.66%;
+        }
+        .col-12 {
           width: 100%;
         }
-        
-        @media only screen and (min-width: 768px) {
-          /* For desktop: */
-          .col-1 {width: 8.33%;}
-          .col-2 {width: 16.66%;}
-          .col-3 {width: 25%;}
-          .col-4 {width: 33.33%;}
-          .col-5 {width: 41.66%;}
-          .col-6 {width: 50%;}
-          .col-7 {width: 58.33%;}
-          .col-8 {width: 66.66%;}
-          .col-9 {width: 75%;}
-          .col-10 {width: 83.33%;}
-          .col-11 {width: 91.66%;}
-          .col-12 {width: 100%;}
-        }
-        .container {
-          display: flex; /* or inline-flex */
-        }
+      }
+      .container {
+        display: flex; /* or inline-flex */
+      }
     </style>
   </head>
   <body>
-    
-    <header id="header" class="col-12">
-        <div class="container">
-            <nav style="position:absolute"id="nav-bar">
-              <div class="col-3">
-                
-                <br>
-              <a href="#home" class="nav-link"><h3>&nbsp;&nbsp;&nbsp; Home</h3></a>
-            </div>
-            <div class="col-3">
-                
-                
-              <a href="#component" class="nav-link col-3"><h3>&nbsp;&nbsp;&nbsp; Component</h3></a>
-            </div>
-            
-            
-              <div class="col-3">
-                  
-              <a href="#pricing" class="nav-link col-3"><h3>&nbsp;&nbsp;&nbsp; Pricing</h3></a>
-            </div>
-            
-              <div class="col-3">
-      
-              <a href="#contact" class="nav-link col-3"><h3>&nbsp;&nbsp;&nbsp; Contact</h3></a>
-            </div>
-      
-            </nav>
-          </div>
+    <header id="header" style="position:fixed; top:0px;left:0px; height: 300px;display: flex" class="col-12">
       <div class="container">
-      <img
-        style="margin-left: auto"
-        src="https://www.import.io/wp-content/uploads/2017/10/React-logo.png"
-        alt="react-logo"
-        id="header-img"
-        width="600px"
-      />
-    </div>
+        <nav  id="nav-bar">
+          <div class="col-3">
+            <br />
+            <a href="#home" class="nav-link"
+              ><h3>&nbsp;&nbsp;&nbsp; Home</h3></a
+            >
+          </div>
+          <div class="col-3">
+            <a href="#component" class="nav-link col-3"
+              ><h3>&nbsp;&nbsp;&nbsp; Component</h3></a
+            >
+          </div>
 
+          <div class="col-3">
+            <a href="#pricing" class="nav-link col-3"
+              ><h3>&nbsp;&nbsp;&nbsp; Pricing</h3></a
+            >
+          </div>
 
+          <div class="col-3">
+            <a href="#contact" class="nav-link col-3"
+              ><h3>&nbsp;&nbsp;&nbsp; Contact</h3></a
+            >
+          </div>
+        </nav>
+      </div>
+      
+        <img
+          style="margin-left: auto; display: block"
+          src="https://www.import.io/wp-content/uploads/2017/10/React-logo.png"
+          alt="react-logo"
+          id="header-img"
+          width="500px"
+        />
+      
     </header>
-    <iframe style="position:absolute ; left:50%" width="420" height="315"
-    src="https://www.youtube.com/embed/J7Tw1hlK41E">
+    <iframe
+     id="video"
+      style="position:absolute ; left:50%; top:320px"
+      width="420"
+      height="315"
+      src="https://www.youtube.com/embed/J7Tw1hlK41E"
+    >
     </iframe>
-    <video id="video" src="https://www.youtube.com/watch?v=J7Tw1hlK41E"></video>
 
-    <div id="home">Home</div>
+
+    <div id="home" style="margin-top: 320px"><h3>Home</h3></div>
     <form action="http://www.freecodecamp.com/email-submit" id="form">
       <input
         type="email"
@@ -85,12 +112,12 @@
         placeholder="Enter your email"
         required
       />
-      <input type="submit" id="submit">
+      <input type="submit" id="submit" />
     </form>
-    <div id="component">Components</div>
-    <div id="pricing">Pricing</div>
-    <div id="contact">Contact</div>
-    <br>
+    <div id="component"><h3>Components</h3></div>
+    <div id="pricing"><h3>Pricing</h3></div>
+    <div id="contact"><h3>Contact</h3></div>
+    <br />
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <!--
