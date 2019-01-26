@@ -1,0 +1,10 @@
+#header {
+    background-color: lightslategray;
+}
+@media (max-width: 600px) {
+    #header {
+        background-color: lightcyan;
+    }
+    
+} 
+
